@@ -18,11 +18,11 @@ git pull origin master
 ```
 
 ## Python Foundation:
--Primitive
--Function
--Object
--Class
--Class Deep Dive
--Operation & Conditions
--Loops
--...
+- Primitive
+- Function
+- Object
+- Class
+- Class Deep Dive
+- Operation & Conditions
+- Loops
+- ...
