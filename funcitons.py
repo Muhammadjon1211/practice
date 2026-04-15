@@ -28,3 +28,6 @@ print("result1:", result1)  # void
 
 result2 = greeting("Justin")
 print("result2:", result2)
+
+
+print("=========KEYWORDS & DEFAULT arguments==========")
