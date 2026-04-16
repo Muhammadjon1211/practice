@@ -40,3 +40,44 @@ print(new_message)
 
 # static method
 Person.explain()
+
+
+print("=== special methods ===")
+
+
+class Car():
+    description = "The class makes cars"
+
+    # constructor (__init__ -> initializer)
+    def __new__(cls, *args):
+        print("*__new__*")
+        return super().__new__(cls)
+
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+
+    def start_engine(self):
+        print(f"{self.name} stars engine")
+
+    def stop_engine(self):
+        print(f"{self.name} stops engine")
+
+    def __str__(self):
+        return f"The car name: {self.name} was manufactured in {self.year}"
+
+    def __call__(self):
+        print("Object executed as function")
+        return True
+
+
+my_car = Car("Toyota", 2015)
+my_car.start_engine()
+my_car.stop_engine()
+print(my_car)
+
+print("-------")
+your_car = Car("Tesla", 2025)
+print(your_car)
+response = your_car()
+print(response)
