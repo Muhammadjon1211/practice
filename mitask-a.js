@@ -7,23 +7,27 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
 
 //SOLUTIION
-const letterCount = (lett, word) => {
-    if (typeof lett === "string" && lett.length === 1) {
-        if (typeof word === 'string') {
-            let number = 0;
-            for (let i = 0; word.length > i; i++) {
-                if (lett === word[i]) {
-                    number += 1
-                }
-            } 
-            return number
-        } else {
-            console.log("Please ender a word as a second argument")
-        }
-    } else {
+// DEFINE
+const letterCount = (letter, word) => {
+    if (typeof letter !== "string" || letter.length !== 1) {
         console.log("Please enter a single letter as a first argument")
     }
+
+    if (typeof word !== 'string') {
+        console.log("Please enter a word as a second argument")
+    }
+
+    let number = 0
+
+    for (let i = 0; i < word.length; i++) {
+        if (word[i].toLowerCase() === letter.toLowerCase()) {
+            number += 1;
+        }
+    }
+
+    return number
 }
 
+//CALL
 const result = letterCount("m", "muhammad")
 console.log(result)
