@@ -31,3 +31,15 @@ print("result2:", result2)
 
 
 print("=========KEYWORDS & DEFAULT arguments==========")
+
+
+def give_greet(name, age=22):
+    print("give_greet is executed")
+    return f"Hi {name.upper()} you are {age} years old."
+
+
+result3 = give_greet("justin", age=28)
+print("result3:", result3)
+
+result4 = give_greet("john")
+print("result4:", result4)
