@@ -43,3 +43,15 @@ print("result3:", result3)
 
 result4 = give_greet("john")
 print("result4:", result4)
+
+print("=========Scope==========")
+
+b = 100
+
+
+def calculate(a):
+    c = a * b
+    print(f"c value is:", c)
+
+
+calculate(5)
