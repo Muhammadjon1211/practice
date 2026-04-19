@@ -1,3 +1,25 @@
+//MITASK-B
+/*Shunday function tuzing, u 1ta string parametrga ega bolsin, 
+hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.*/
+//SOLUTION
+//DEFINE
+const numberCount = (numtext) => {
+    let count = 0;
+    for (const char of numtext) {
+        if (Number(char) == char) {
+            count += 1;
+        }
+    }
+    return count
+}
+
+//CALL
+const result = numberCount('ad2a54y79wet0sfgb9bdj7df890')
+console.log(result)
+
+
+
 // MITASK-A
 /*
 Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi 
@@ -8,6 +30,7 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
 //SOLUTIION
 // DEFINE
+/*
 const letterCount = (letter, word) => {
     if (typeof letter !== "string" || letter.length !== 1) {
         console.log("Please enter a single letter as a first argument")
@@ -31,3 +54,4 @@ const letterCount = (letter, word) => {
 //CALL
 const result = letterCount("m", "muhammad")
 console.log(result)
+*/
