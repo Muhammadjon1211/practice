@@ -1,3 +1,36 @@
+//MITASK-C
+/*Shunday function tuzing, u 2ta string parametr ega bolsin, 
+hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;*/
+//SOLUTION
+//DEFINE
+const checkContent = (string1, string2) => {
+    if (typeof string1 != 'string' || typeof string2 != 'string') {
+        return "Please enter string arguments"
+    }
+
+    if (string1.length != string2.length) {
+        return false
+    }
+
+    let letter = ""
+    for (const char of string1) {
+        for (const ele of string2) {
+            if (char === ele) {
+                letter += char
+            }
+        }
+    }
+    return true
+}
+
+//CALL
+const mitaskc = checkContent("muhammad", "mmmdahau")
+console.log(mitaskc)
+
+
+
+
 //MITASK-B
 /*Shunday function tuzing, u 1ta string parametrga ega bolsin, 
 hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
