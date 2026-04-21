@@ -37,19 +37,19 @@ hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.*/
 //SOLUTION
 //DEFINE
-const numberCount = (numtext) => {
-    let count = 0;
-    for (const char of numtext) {
-        if (Number(char) == char) {
-            count += 1;
-        }
-    }
-    return count
-}
+// const numberCount = (numtext) => {
+//     let count = 0;
+//     for (const char of numtext) {
+//         if (Number(char) == char) {
+//             count += 1;
+//         }
+//     }
+//     return count
+// }
 
-//CALL
-const result = numberCount('ad2a54y79wet0sfgb9bdj7df890')
-console.log(result)
+// //CALL
+// const result = numberCount('ad2a54y79wet0sfgb9bdj7df890')
+// console.log(result)
 
 
 
