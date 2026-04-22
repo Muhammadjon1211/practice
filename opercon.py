@@ -2,15 +2,15 @@ print("===Operators===")
 a = 19
 b = 5
 
-result = a // b
-left = a % b
+result = a // b  # butun sonini olib beradi
+left = a % b  # qoldiqni hisoblab beradi
 print(f"the result: {result}, and the left: {left}")
 
 a += 100
 print("a:", a)
 
-print("b**2:", b**2)
-print("b**3:", b**3)
+print("b**2:", b**2)  # b^2
+print("b**3:", b**3)  # b^3
 
 print("="*10)
 
@@ -47,7 +47,7 @@ age = 20
 # print(person)
 
 # Ternary Operator
-person = "adult" if age > 18 else "minor"
+person = "adult" if age > 18 else "minor"  # ? true:false
 print("person:", person)
 
 is_student = True
@@ -59,7 +59,7 @@ if not is_student:
     print("Welcome here, student")
 elif is_admin:
     print("Please go to this office")
-elif is_guest or is_parent:
+elif is_guest or is_parent:  # &&-> and, ||-> or
     print("Waiting room is over there")
 else:
     print("Other cases")
