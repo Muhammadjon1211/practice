@@ -42,3 +42,16 @@ def calculate(*args):
 calculate(1, 7, 2, 3)
 print(0, 2, 300)
 print(2, 9)
+
+# **kwargs > dictionary
+
+# unpacking dictionary
+
+
+def introduce(**kwargs):
+    print(f"the type(**kwargs) value: {type(kwargs)}")
+    print(f"Hi, I am {kwargs["name"]} and I am {kwargs['age']} years old!")
+
+
+introduce(name="Justin", age=25)
+introduce(name="Shawn", age=30, single=True)
