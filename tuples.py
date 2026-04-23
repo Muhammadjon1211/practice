@@ -55,3 +55,11 @@ def introduce(**kwargs):
 
 introduce(name="Justin", age=25)
 introduce(name="Shawn", age=30, single=True)
+
+
+def greating(*args, **kwargs):
+    print("*args >", args)
+    print("*kwargs >", kwargs)
+
+
+greating("hi", True, 10, name='John', age=22)
