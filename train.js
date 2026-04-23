@@ -1,32 +1,53 @@
+//MITASK-D
+/*Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
+function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
+//SOLUTION
+//DEFINE
+const getHighestIndex = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= array[i++]) {
+            return `The highest index is ${array.indexOf(array[i])} and the value is:${array[i]}`
+        }
+    }
+
+}
+
+
+//CALL
+const result = getHighestIndex([5, 21, 12, 21, 8])
+console.log(result)
+
+
 //MITASK-C
 /*Shunday function tuzing, u 2ta string parametr ega bolsin, 
 hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;*/
 //SOLUTION
 //DEFINE
-const checkContent = (string1, string2) => {
-    if (typeof string1 != 'string' || typeof string2 != 'string') {
-        return "Please enter string arguments"
-    }
+// const checkContent = (string1, string2) => {
+//     if (typeof string1 != 'string' || typeof string2 != 'string') {
+//         return "Please enter string arguments"
+//     }
 
-    if (string1.length != string2.length) {
-        return false
-    }
+//     if (string1.length != string2.length) {
+//         return false
+//     }
 
-    let letter = ""
-    for (const char of string1) {
-        for (const ele of string2) {
-            if (char === ele) {
-                letter += char
-            }
-        }
-    }
-    return true
-}
+//     let letter = ""
+//     for (const char of string1) {
+//         for (const ele of string2) {
+//             if (char === ele) {
+//                 letter += char
+//             }
+//         }
+//     }
+//     return true
+// }
 
-//CALL
-const mitaskc = checkContent("muhammad", "mmmdahau")
-console.log(mitaskc)
+// //CALL
+// const mitaskc = checkContent("muhammad", "mmmdahau")
+// console.log(mitaskc)
 
 
 
