@@ -63,3 +63,11 @@ def greating(*args, **kwargs):
 
 
 greating("hi", True, 10, name='John', age=22)
+
+print("== ZIP ===")
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+result = list(zipped)
+print(result)
