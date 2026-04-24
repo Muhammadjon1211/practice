@@ -15,7 +15,7 @@ const getHighestIndex = (array) => {
 
 
 //CALL
-const result = getHighestIndex([5, 21, 12, 21, 8])
+const result = getHighestIndex([5, 21, 12, 21, 8, 42, 1, 56])
 console.log(result)
 
 
