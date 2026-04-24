@@ -5,17 +5,18 @@ MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
 //SOLUTION
 //DEFINE
 const getHighestIndex = (array) => {
+    let highestEle = 0
     for (let i = 0; i < array.length; i++) {
-        if (array[i] >= array[i++]) {
-            return `The highest index is ${array.indexOf(array[i])} and the value is:${array[i]}`
+        if (array[i] >= highestEle) {
+            highestEle = array[i]
         }
     }
-
+    return array.indexOf(highestEle)
 }
 
 
 //CALL
-const result = getHighestIndex([5, 21, 12, 21, 8, 42, 1, 56])
+const result = getHighestIndex([5, 6, 12, 21, 8, 42, 1, 56])
 console.log(result)
 
 
