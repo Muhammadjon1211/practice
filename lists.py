@@ -100,3 +100,36 @@ print("people(1)", people)
 
 people.sort(key=lambda person: person[1])
 print("people lambda", people)
+
+
+print("=== enumerate, map, filter ===")
+# enumerate for index & value
+animals = ['dog', 'cat']
+for element in enumerate(animals):
+    print("element:", element)
+
+for index, value in enumerate(animals):
+    print(f"the index: {index} and value: {value}")
+
+# dictinories
+car_obj = dict(brand='ferrari', year=2025)
+result = car_obj.items()
+for key, value in car_obj.items():
+    print(f"the index: {key} and value: {value}")
+
+print("===============")
+cars = [
+    ('Ferrari', 78),
+    ("Toyota", 87),
+    ("Audi", 116),
+    ("BMW", 109),
+    ("Pagani", 33)
+]
+
+result1 = map(lambda car: car[0], cars)
+print(f"result through lambda, {list(result1)}")
+
+print("===============")
+# filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"result filter, {list(result_filter)}")
