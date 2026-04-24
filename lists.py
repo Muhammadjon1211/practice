@@ -76,3 +76,27 @@ print("reverse:", numbers)
 nums = [1, 32, 21, 12, 4, 5, 100]
 new_nums = sorted(nums)
 print("sorted:", new_nums)
+
+print("=== Lambda Functions ===")
+# lambda is small anonym function
+
+
+def calculate(x, y): return x*y
+
+
+result = calculate(3, 5)
+print(result)
+
+people = [
+    ("Robert", 20),
+    ("Steve", 19),
+    ("Joseph", 23),
+    ("Michael", 30),
+    ("Ali", 18)
+]
+
+people.sort()
+print("people(1)", people)
+
+people.sort(key=lambda person: person[1])
+print("people lambda", people)
