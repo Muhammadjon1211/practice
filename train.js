@@ -1,23 +1,40 @@
+//MITASK-E
+/*E-TASK (NodeJS)
+Shunday function tuzing, u bitta string argumentni qabul 
+qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh" */
+//SOLUTION
+//DEFINE
+const getReverse = (word) => {
+    let newList = word.split("")
+    let reversedList = newList.reverse()
+    return reversedList.join("")
+}
+
+//CALL
+const result = getReverse('world')
+console.log(result)
+
 //MITASK-D
 /*Shunday function tuzingki unga integerlardan iborat array pass bolsin va 
 function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
 //SOLUTION
 //DEFINE
-const getHighestIndex = (array) => {
-    let highestEle = 0
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] >= highestEle) {
-            highestEle = array[i]
-        }
-    }
-    return array.indexOf(highestEle)
-}
+// const getHighestIndex = (array) => {
+//     let highestEle = 0
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] >= highestEle) {
+//             highestEle = array[i]
+//         }
+//     }
+//     return array.indexOf(highestEle)
+// }
 
 
-//CALL
-const result = getHighestIndex([5, 6, 12, 21, 8, 42, 1, 56])
-console.log(result)
+// //CALL
+// const result = getHighestIndex([5, 6, 12, 21, 8, 42, 1, 56])
+// console.log(result)
 
 
 //MITASK-C
