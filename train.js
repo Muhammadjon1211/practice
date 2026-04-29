@@ -1,3 +1,27 @@
+// MITASK-F
+/* 
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
+agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: findDoublers("hello") return true return qiladi
+*/
+
+// h e l l o => h => e l l o=> l == h, e, l, o 
+
+const findDoublers = (string) => {
+    const setString = new Set(string)
+    console.log(setString, typeof setString)
+    const newString = [...setString].join('')
+    console.log(newString, typeof newString)
+    if (string.length !== newString.length) {
+        return true
+    } return false
+}
+
+const result = findDoublers('helo')
+console.log(result)
+
+
+
 //MITASK-E
 /*E-TASK (NodeJS)
 Shunday function tuzing, u bitta string argumentni qabul 
@@ -5,15 +29,15 @@ qilib osha stringni teskari qilib return qilsin.
 MASALAN: getReverse("hello") return qilsin "olleh" */
 //SOLUTION
 //DEFINE
-const getReverse = (word) => {
-    let newList = word.split("")
-    let reversedList = newList.reverse()
-    return reversedList.join("")
-}
+// const getReverse = (word) => {
+//     let newList = word.split("")
+//     let reversedList = newList.reverse()
+//     return reversedList.join("")
+// }
 
-//CALL
-const result = getReverse('world')
-console.log(result)
+// //CALL
+// const result = getReverse('world')
+// console.log(result)
 
 //MITASK-D
 /*Shunday function tuzingki unga integerlardan iborat array pass bolsin va 

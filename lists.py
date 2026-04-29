@@ -28,7 +28,7 @@ print("=== List methos ===")
 # methods: appendd(), insert(), pop(), remove(), clear(), sort(), index()
 letters = ["a", "b", "d"]
 
-letters.append("c")  # add begind mutable
+letters.append("c")  # add behind mutable
 print(f"append(): {letters}")
 
 letters.insert(0, "z")  # add front mutable
