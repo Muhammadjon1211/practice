@@ -26,7 +26,21 @@ print('=== Package Manager & External Packeges ===')
 # Package Managers: pip, pipenv, npm yarn, brew, composer
 # External Package
 
-with Image.open("material/img.jpeg") as img_obj:
-    resize_img = img_obj.resize((200, 200))
-    resize_img.show()
-    resize_img.save("material/sample.png")
+# with Image.open("material/img.jpeg") as img_obj:
+#     resize_img = img_obj.resize((200, 200))
+#     resize_img.show()
+#     resize_img.save("material/sample.png")
+
+print("=== Debugging ===")
+
+
+def get_summary(*args):  # DEFINE
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount
+
+
+test = 100
+result = get_summary(1, 2, 3, 4, 5)
+print("result", result)
