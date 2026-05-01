@@ -12,7 +12,20 @@ async function division(a, b) {
 
 
 division(10,3).then(data => {
-    console.log("RESULT:", data)
+    console.log("RESULT:", data);
+
+    division(10,4).then(data => {
+        console.log("RESULT:", data);
+
+        division(10,4).then(data => {
+            console.log("RESULT:", data);
+        }).catch(err=>{
+            console.log("Error division:", err)
+        });
+    }).catch(err=>{
+        console.log("Error division:", err)
+    });
+
 }).catch(err=>{
     console.log("Error division:", err)
 });
