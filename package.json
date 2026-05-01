@@ -1,0 +1,24 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "description": "this is testing app",
+  "homepage": "https://github.com/Muhammadjon1211/practice#readme",
+  "bugs": {
+    "url": "https://github.com/Muhammadjon1211/practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammadjon1211/practice.git"
+  },
+  "license": "MIT",
+  "author": "JOHN",
+  "type": "commonjs",
+  "main": "train.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
